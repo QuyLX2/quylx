@@ -1,0 +1,96 @@
+*{margin: 0; padding: 0;}
+
+i._1icon:hover {
+    color: orange;
+    background-color: white;
+}
+
+i._1icon {
+    display: inline-block;
+    border-radius: 50%;
+    background: none;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    padding-top: 11px;
+    box-sizing: border-box;
+    border: solid 1px #e0dada;
+    color: white;
+    transition: 0.4s;
+    font-size: 14px;
+    margin-right: 10px;
+
+}
+
+.oneuser:hover .infouser {
+    transform: rotateY(0deg);
+}
+
+.oneuser:hover .imageuser {
+    transform: rotateY(180deg);
+}
+
+.imageuser {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    padding-top: 20px;
+}
+
+.infouser {
+    width: 100%;
+    height: 100%;
+    background: orange;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    transform: rotateY(-180deg);
+}
+
+.imageuser img {
+    width: 46%;
+    border-radius: 50%;
+    margin-bottom: 22px;
+    margin-top: 10px;
+    border: solid #f9f5f5 5px;
+    box-shadow: 0 0 0 5px #807c7c59;
+    /* box-sizing: border-box; */
+}
+
+.oneuser {
+    width: 260px;
+    height: 310px;
+    border-radius: 4px;
+    position: relative;
+    perspective: 900px;
+} 
+@font-face{
+	src:url("fonts/Lato-Light.ttf");
+	font-family: latoLight;
+}
+@font-face{
+	src:url("fonts/Lato-Bold.ttf");
+	font-family: latoBold;
+}
+.ten{
+	font-family: latoBold;
+}
+.vitri{
+	font-family: latoLight;
+}
+.descreption{
+	font-family: latoLight;
+}
